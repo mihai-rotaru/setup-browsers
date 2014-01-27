@@ -1,5 +1,12 @@
 ;; Download and install browsers
 
+;; check that script is run as administrator
+if not A_IsAdmin
+{
+   MsgBox This script will install software on your computer, and needs to be run as administrator. You can right-click it, and select "Run as Adminstrator".
+   ExitApp
+}
+
 ;; Safari 5.1.7
 ;; ------------
 
