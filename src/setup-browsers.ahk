@@ -46,3 +46,12 @@ SendInput {Space}
 ;; press "Install"
 ControlFocus, &Install, Safari
 SendInput {Space}
+
+;; uncheck "Open Safari"
+WinWaitActive, Safari, Congratulations
+ControlFocus, Open Safari after, Safari
+SendInput {Space}
+
+;; press Finish
+ControlFocus, &Finish, Safari
+SendInput {Space}
